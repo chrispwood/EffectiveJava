@@ -1,6 +1,6 @@
 package com.wood.factory;
 
-public class FactoryPattern {
+public class FactoryPattern implements Service {
 
 	// advantage:  your class is "instance controlled"
 	private static FactoryPattern oldMan;
@@ -59,5 +59,31 @@ public class FactoryPattern {
 
 		System.out.println(FactoryPattern.getSubPatternOne().toString());
 		System.out.println(FactoryPattern.getSubPatternTwo().toString());
+
+		System.out.println("");
+
+		Service service = Services.newInstance();
+		System.out.println(service.getName());
+		System.out.println(service.getAge());
+		System.out.println(service.getDescription());
+		System.out.println(service.getEmotion());
+
+		System.out.println("");
+
+		service = Services.newInstance("old");
+		System.out.println(service.getName());
+		System.out.println(service.getAge());
+		System.out.println(service.getDescription());
+		System.out.println(service.getEmotion());
+
+		System.out.println("");
+
+		service = Services.newInstance("young");
+		System.out.println(service.getName());
+		System.out.println(service.getAge());
+		System.out.println(service.getDescription());
+		System.out.println(service.getEmotion());
+
+
 	}
 }
