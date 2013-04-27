@@ -30,13 +30,13 @@ public class BuilderExample {
 		}
 	}
 
-	private String firstName;
-	private String lastName;
-	private int age;
-	private int height;
-	private int shoeSize;
-	private String ssn;
-	private Color favoriteColor;
+	private final String firstName;
+	private final String lastName;
+	private final int age;
+	private final int height;
+	private final int shoeSize;
+	private final String ssn;
+	private final Color favoriteColor;
 
 	public static class Builder {
 		private final String firstName;
