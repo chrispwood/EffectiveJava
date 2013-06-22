@@ -13,7 +13,7 @@
                         public InnerInner() {}
                         public void doThings() {
                             System.out.println("NestedLocalClasses class: "+NestedLocalClasses.this.className);
-                            // How to access the Inner member?
+                            System.out.println("Inner class: "+Inner.this.className);
                             System.out.println("InnerInner class: "+this.className);
                         }
                     }
